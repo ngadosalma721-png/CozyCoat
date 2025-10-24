@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd47f0S5glH/iM+gL3QvR46J2t4x7U8zR0+H/K1P8P+K70x5I/2eG4S/gGkU5Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <section>
+        <nav class="navbar navbar-expand-lg bg-primary-subtle" data-bs-theme="dark">
+            <div class="container-fluid">
+           <a class="navbar-brand" href="#">
+                <img src="image/coats-logo-.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-middle">
+                CozyCoat
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">    
+                <a class="nav-link" aria-current="page" href="index.html"><i class="bi bi-house-fill"></i> Home</a>  
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="about.html"><i class="bi bi-file-earmark-person"></i> About Us</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="Contact.html"><i class="bi bi-person-lines-fill"></i> Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-bag-fill"></i> Products</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Category1.html">Hoodie </a></li>
+                    <li><a class="dropdown-item" href="Category2.html">Fur Coats</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="Product.html">More</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Cart.html"><i class="bi bi-cart3"></i> Cart</a>
+                </li>
+                <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+                </li> -->
+            </ul>
+             <form class="d-flex me-2" role="Login">    
+                <button class="btn btn-outline-success" type="submit"><i class="bi bi-box-arrow-in-right"></i><a href="Login.html">Login</a></button>
+            </form>
+            <form class="d-flex" role="Login">    
+                <button class="btn btn-outline-success" type="submit"><i class="bi bi-box-arrow-in-right"></i><a href="Register.html">Register</a></button>
+            </form>
+            </div>
+        </div>
+        </nav>
+    </section>
+
+<section>
+
+    <!-- HEADER -->
+    <header class="py-5 text-center">
+      <div class="container">
+        <h1 class="fw-bold mb-3">Contact Us</h1>
+        <p class="text-muted">We’d love to hear from you! Whether you have questions about our coats, your order, or partnership opportunities — our team is here to help.</p>
+      </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="pb-5">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          
+          <!-- Contact Info -->
+          <div class="col-md-5">
+            <h3 class="h5 fw-semibold mb-3">Get in Touch</h3>
+            <p class="text-muted">Reach out to us using the form or through the contact details below.</p>
+
+            <ul class="list-unstyled text-muted">
+              <li class="mb-3">
+                <strong>Email:</strong> <br>
+                <a href="mailto:ann@cozycoats.com" class="text-decoration-none">ann@cozycoats.com</a>
+              </li>
+              <li class="mb-3">
+                <strong>Phone:</strong> <br>
+                <a href="tel:+639678543210" class="text-decoration-none">+63 967 854 3210</a>
+              </li>
+              <li class="mb-3">
+                <strong>Address:</strong> <br>
+                CozyCoats Bontoc, Mountain Province, Philippines
+              </li>
+              <li class="mb-3">
+                <strong>Business Hours:</strong> <br>
+                Monday – Saturday, 9:00 AM – 5:00 PM
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-md-7">
+            <div class="bg-white border rounded p-4 shadow-sm">
+              <h3 class="h5 fw-semibold mb-3">Send Us a Message</h3>
+              <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" class="form-control" placeholder="Subject of your message">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea id="message" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+<!-- Footer -->
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <!-- <div class="container my-5"> -->
+    <!-- Footer -->
+    <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #45526e"
+            >
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                    CozyCoat
+                    </h6>
+                    <p>
+                    Here you can find a unisex design and can 
+                    be worn over any top. All this garments you wear 
+                    keeps your body warm.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <p>
+                    <a class="text-white">Hoodie Jacket</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Fur Coat</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Casual Sweatshirt</a>
+                    </p>
+                    
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                    Useful links
+                    </h6>
+                    <p>
+                    <a class="text-white">Your Account</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Become an Affiliate</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Shipping Rates</a>
+                    </p>
+                    <p>
+                    <a class="text-white">Help</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-75 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> Bontoc, MT. Province, Philippines</p>
+                    <p><i class="fas fa-envelope mr-3"></i> ann@cozycoats.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +63 967 854 3210</p>
+                    <p><i class="fas fa-print mr-3"></i> +63 916 143 8080</p>
+                </div>
+                <!-- Grid column -->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-3">
+
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8 text-center text-md-start">
+                    <!-- Copyright -->
+                    <div class="p-3">
+                    © 2020 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/"
+                        >ann.com</a
+                        >
+                    </div>
+                    <!-- Copyright -->
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                    <!-- Facebook: Icon class (fab fa-facebook-f) is inside an anchor tag (<a>) with a link (href) -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1 text-white hover:bg-white hover:text-dark transition duration-300"
+                        href="https://www.facebook.com/yourpage"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-facebook-f"></i
+                    ></a>
+
+                    <!-- Twitter (X) -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1 text-white hover:bg-white hover:text-dark transition duration-300"
+                        href="https://www.twitter.com/yourpage"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-twitter"></i
+                    ></a>
+
+                    <!-- Google -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1 text-white hover:bg-white hover:text-dark transition duration-300"
+                        href="https://www.google.com/"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-google"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                        class="btn btn-outline-light btn-floating m-1 text-white hover:bg-white hover:text-dark transition duration-300"
+                        href="https://www.instagram.com/yourpage"
+                        target="_blank"
+                        role="button"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+                <!-- Grid column: Social Icons -->
+            </div>
+                <!-- Grid column -->
+                </div>
+            </section>
+            <!-- Section: Copyright -->
+            </div>
+            <!-- Grid container -->
+        </footer>
+        <!-- Footer -->
+        </div>
+        <!-- End of .container -->
+
+     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
